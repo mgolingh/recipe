@@ -76,7 +76,7 @@ table {
     --orange:#EB5428
 }
 
-
+/*----------small-setup----------*/
 
 body{
     min-width:414px;
@@ -131,6 +131,8 @@ dd{
     margin-left: 1em;
 }
 
+/*----------small header----------*/
+
 header{
     display:flex;
     flex-direction: column;
@@ -160,6 +162,8 @@ li h3{
     position:relative;
     left:30px;
 }
+
+/*----------small main section----------*/
 
 div p{
     font-family: var(--font-text);
@@ -202,6 +206,7 @@ div p{
 .directions{
     margin-left:1em;
     line-height: 1.35;
+    margin-bottom:1em;
 }
 
 .directions h2{
@@ -217,81 +222,51 @@ div p{
     margin-left: 1em;
 }
 
+/*----------small aside section----------*/
+
 aside{
-    display:grid;
-    grid-template-columns: 1fr ;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
     background-color: var(--teal);
 }
 
 aside h2{
-        text-align: center;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        padding-top: 0.5em;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+aside img{
+    width:90%;
+}
+
+.rice{
+    display:flex;
+    flex-direction: row;
+    margin-left:1em;
 }
 
 .salsaS{
     display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: row;
+    margin-left:1em;
 }
 
-
-
-
-
-#social{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+.guac{
+    display:flex;
+    flex-direction: row;
+    margin-left:1em;
 }
 
-#social li{
-    position:relative;
-    left:15px;
-    color:var(--orange);
-    font-size: 20px;
-    
+.torta{
+    display:flex;
+    flex-direction: row;
+    margin-left:1em;
 }
 
-#social a{
-    text-decoration: none;
-    color:var(--orange);
-    font-family: var(--font-header);
-    font-size: var(--social-li);
-}
-
-#fb div{
-    position:relative;
-    left:5px;
-}
-
-#fb svg{
-    position:relative;
-    left:15px;
-}
-
-#insta svg{
-    position:relative;
-    left:10px;
-}
-
-#yt svg{
-    position:relative;
-    left:10px;
-}
-
-#yt div{
-    position:relative;
-    top:-1px;
-    right:-5px;
-}
-
-#tt div{
-    top:-1px;
-    right:-5px
-}
+/*----------small nav----------*/
 
 nav {
     grid-area: nav;
@@ -302,6 +277,7 @@ nav {
     top: 0;
     z-index:5;
 }
+
 nav ul {
     grid-area: hamberger;
     padding: 0;
@@ -360,7 +336,6 @@ nav h2 {
     width: 1px;
 }
 
-
 #logo{
     display:block;
     position:fixed;
@@ -375,6 +350,29 @@ nav h2 {
     position:relative;
     left:60px;
 }
+
+#sign-in{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:-10px;
+    color:var(--black);
+    font-family: var(--font-header);
+    font-size: var(--nav-span);
+    font-weight: 700;
+}
+
+#sign-in svg{
+    position:relative;
+    right:-15px;
+}
+
+#sign-in span{
+    position:relative;
+    top:-3px;
+}
+
+/*----------small form----------*/
 
 #search{
     display:block;
@@ -404,25 +402,57 @@ nav h2 {
     stroke: var(--orange);
 }
 
-#sign-in{
-    display:block;
-    position:absolute;
-    top:20px;
-    right:-10px;
-    color:var(--black);
+/*----------small footer----------*/
+
+#social{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#social li{
+    position:relative;
+    left:15px;
+    color:var(--orange);
+    font-size: 20px;
+}
+
+#social a{
+    text-decoration: none;
+    color:var(--orange);
     font-family: var(--font-header);
-    font-size: var(--nav-span);
-    font-weight: 700;
+    font-size: var(--social-li);
 }
 
-#sign-in svg{
+#fb div{
     position:relative;
-    right:-15px;
+    left:5px;
 }
 
-#sign-in span{
+#fb svg{
     position:relative;
-    top:-3px;
+    left:15px;
+}
+
+#insta svg{
+    position:relative;
+    left:10px;
+}
+
+#yt svg{
+    position:relative;
+    left:10px;
+}
+
+#yt div{
+    position:relative;
+    top:-1px;
+    right:-5px;
+}
+
+#tt div{
+    top:-1px;
+    right:-5px
 }
 
 footer h2{
