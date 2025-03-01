@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -50,55 +50,247 @@ table {
 
 /*----------ROOT VARIABLES----------*/
 :root{
-    --font-family: "bebas neue";
-    --font-size-h1:40px;
-    --font-size-h2:30px;
-    --font-size-h3:25px;
+    --font-header: "Bebas Neue";
+    --h1:40px;
+    --h2:30px;
+    --h3:25px;
     --nav-a:20px;
     --nav-span:20px;
     --menu-li:20px;
     --social-li:20px;
-    --footer:2opx;
+    --footer:20px;
 
-    --font-header: "montserrat";
+    --font-text: "montserrat";
     --P:16px;
     --DD:16px;
     --LI:16px;
     --NAV:16PX;
     --INPUT:16PX;
 
-    --dt-header:"montserrat-bold" 16px;
+    --dt:"montserrat 700" 16px;
 
-    --black:(#0D0D0D);
-    --gray:(#F2F2F2);
-    --teal:(#7ABFBF);
+    --black:#0D0D0D;
+    --gray:#F2F2F2;
+    --teal:#7ABFBF;
     --lt-teal:rgba(122,191,191,.5);
-    --orange:(#EB5428)
+    --orange:#EB5428
 }
 
-/*----------universal variables------*/
 
 
-/*-----------Nav variables------------*/
 body{
     min-width:414px;
 }
 
-header{
-    margin-top:1em;
+h1{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    font-family:"bebas neue";
+    font-size:var(--h1);
+    color:var(--black);
+    margin-top:6em;
 }
 
-header h1{
-    font-family:var(--font-header);
-    font-size:var(--font-size-h1);
+h2{
+    font-family:"bebas neue";
+    font-size:var(--h2);
     color:var(--black);
     align-content: center;
-    margin-top:1em;
+    margin-top:2em;
+}
+
+h3{
+    font-family:"bebas neue";
+    font-size:var(--h3);
+    color:var(--black);
+    align-content: center;
+    margin-top:2em;
+}
+
+li{
+    font-family:var(--font-text);
+    font-size: var(--LI);
+}
+
+dl{
+    display:grid;
+    grid-template-columns: max-content;
+}
+
+dt{
+    font-family:var(--font-text);
+    font-weight: 700;
+    grid-column-start: 1;
+}
+
+dd{
+    font-family: var(--font-text);
+    font-size: var(--DD);
+    grid-column-start: 2;
+    margin-left: 1em;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
 }
 
 header img{
     width:100%;
     height:100%;
+}
+
+menu{
+    display:flex;
+    justify-content:space-between;
+    margin:1em;
+}
+
+menu li{
+    list-style-type: none;
+}
+
+li h3{
+    color:var(--orange);
+    margin:0;
+}
+
+#jump svg{
+    position:relative;
+    left:30px;
+}
+
+div p{
+    font-family: var(--font-text);
+    font-size: var(--P);
+    margin:1em;
+    line-height: 1.35;
+}
+
+.stats{
+    margin-left:1em;
+    line-height: 1.35;
+}
+
+.stats h2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.ingredientSection{
+    margin-left:1em;
+    line-height: 1.35;
+}
+
+.ingredientSection h2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.ingredientSection li{
+    list-style-type:disc;
+    margin-left: 1em;
+}
+
+.directions{
+    margin-left:1em;
+    line-height: 1.35;
+}
+
+.directions h2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.directions li{
+    list-style-type: decimal;
+    margin-left: 1em;
+}
+
+aside{
+    display:grid;
+    grid-template-columns: 1fr ;
+    background-color: var(--teal);
+}
+
+aside h2{
+        text-align: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-top: 0.5em;
+}
+
+.salsaS{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+
+
+#social{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#social li{
+    position:relative;
+    left:15px;
+    color:var(--orange);
+    font-size: 20px;
+    
+}
+
+#social a{
+    text-decoration: none;
+    color:var(--orange);
+    font-family: var(--font-header);
+    font-size: var(--social-li);
+}
+
+#fb div{
+    position:relative;
+    left:5px;
+}
+
+#fb svg{
+    position:relative;
+    left:15px;
+}
+
+#insta svg{
+    position:relative;
+    left:10px;
+}
+
+#yt svg{
+    position:relative;
+    left:10px;
+}
+
+#yt div{
+    position:relative;
+    top:-1px;
+    right:-5px;
+}
+
+#tt div{
+    top:-1px;
+    right:-5px
 }
 
 nav {
@@ -131,12 +323,20 @@ nav label {
     display: inline-block;
     user-select: none;
     position: relative;
-    bottom: 5px;
+    bottom: 10px;
     left: 30px;
+    font-family:var(--font-header)
+    
 }
 nav span {
     display: block;
     position: relative;
+    top:-10px;
+    color:var(--black);
+    font-family: var(--font-header);
+    font-size: var(--nav-span);
+    font-weight: 700;
+
  }
 nav label svg {
     display: block;
@@ -158,5 +358,100 @@ nav h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
+}
+
+
+#logo{
+    display:block;
+    position:fixed;
+    width:190px;
+    top:3px;
+    left:90px;
+    background-color: var(--orange);
+    transform:translateY(15px) ;
+}
+
+#logo svg{
+    position:relative;
+    left:60px;
+}
+
+#search{
+    display:block;
+    position:absolute;
+    top:120px;
+    left: 50px;
+}
+
+#search fieldset{
+    visibility: hidden;
+}
+
+#search input{
+    outline-style: solid;
+    outline-color: var(--orange);
+    outline-width: 5px;
+    outline-offset: 10px;
+    width:275px;
+    border-style: none;
+}
+
+#search button{
+    position:relative;
+    top:13px;
+    left:5px;
+    background-color: var(--orange);
+    stroke: var(--orange);
+}
+
+#sign-in{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:-10px;
+    color:var(--black);
+    font-family: var(--font-header);
+    font-size: var(--nav-span);
+    font-weight: 700;
+}
+
+#sign-in svg{
+    position:relative;
+    right:-15px;
+}
+
+#sign-in span{
+    position:relative;
+    top:-3px;
+}
+
+footer h2{
+    visibility: hidden;
+}
+    
+footer h3{
+    visibility: hidden;
+}
+
+#closer img{
+    display:block;
+    position:relative;
+    top: 1em;
+    left:100px;
+    width:50%;
+    height:50%;
+    margin-top: 2em;
+}
+
+#closer{
+    font-family: var(--font-header);
+    font-size: var(--footer);
+    font-weight: bold;
+}
+
+#closer div{
+    position:relative;
+    left:150px;
+    bottom:1em;
 }
 
