@@ -561,10 +561,10 @@ footer h3{
 
 /*----------MEDIUM QUERY----------*/
 
-body{
-    min-width:768px;
+@media screen and (min-width: 768px){
+    
 }
-
+    
 header{
     background-color: var(--gray);
 }
@@ -577,19 +577,35 @@ h1{
     display:block;
     align-self: start;
     margin-left: 20px;
+    margin-bottom: 0.5em;
 }
 
 menu{
     justify-content:space-around;
     z-index: 7;
     backdrop-filter: blur(100px);
-    filter:brightness(150%);
+    filter:brightness(120%);
     margin:0;
-    
-    
+    padding:20px;
 }
 
+header div{
+    background-color: #ffffff;
+}
 
+.stats{
+    display:flex;
+    flex-direction: column;
+    margin-left:1em;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.stats h2{
+    
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
 
 
 
