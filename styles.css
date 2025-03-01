@@ -225,9 +225,6 @@ div p{
 /*----------small aside section----------*/
 
 aside{
-    display:flex;
-    flex-direction:column;
-    gap:30px;
     background-color: var(--teal);
 }
 
@@ -239,31 +236,108 @@ aside h2{
 }
 
 aside img{
-    width:90%;
+    width:110px;
+}
+
+aside h4{
+    visibility: hidden;
+}
+
+#container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .rice{
-    display:flex;
-    flex-direction: row;
+    grid-row: 1/2;
     margin-left:1em;
+}
+
+.rice h3{
+    position:relative;
+    left:140px;
+    bottom:160px;
+}
+
+.rice p{
+    position:relative;
+    left:120px;
+    bottom:160px;
+}
+
+.rice .rating{
+    position:relative;
+    left:120px;
+    bottom:160px;
 }
 
 .salsaS{
-    display:flex;
-    flex-direction: row;
+    grid-row: 2/3;
     margin-left:1em;
+}
+
+.salsaS h3{
+    position:relative;
+    left:140px;
+    bottom:160px;
+}
+
+.salsaS p{
+    position:relative;
+    left:120px;
+    bottom:160px;
+}
+
+.salsaS .rating{
+    position:relative;
+    left:120px;
+    bottom:160px;
 }
 
 .guac{
-    display:flex;
-    flex-direction: row;
+    grid-row: 3/4;
     margin-left:1em;
 }
 
+.guac h3{
+    position:relative;
+    left:140px;
+    bottom:160px;
+}
+
+.guac p{
+    position:relative;
+    left:120px;
+    bottom:160px;
+}
+
+.guac .rating{
+    position:relative;
+    left:120px;
+    bottom:160px;
+}
+
 .torta{
-    display:flex;
-    flex-direction: row;
+    grid-row: 4/5;
     margin-left:1em;
+}
+
+.torta h3{
+    position:relative;
+    left:140px;
+    bottom:160px;
+}
+
+.torta p{
+    position:relative;
+    left:120px;
+    bottom:160px;
+}
+
+.torta .rating{
+    position:relative;
+    left:120px;
+    bottom:160px;
 }
 
 /*----------small nav----------*/
