@@ -559,3 +559,42 @@ footer h3{
     bottom:1em;
 }
 
+/*----------MEDIUM QUERY----------*/
+
+body{
+    min-width:768px;
+}
+
+header{
+    background-color: var(--gray);
+}
+
+header img{
+    position:relative;
+    bottom:60px;
+}
+h1{
+    display:block;
+    align-self: start;
+    margin-left: 20px;
+}
+
+menu{
+    justify-content:space-around;
+    z-index: 7;
+    backdrop-filter: blur(100px);
+    filter:brightness(150%);
+    margin:0;
+    
+    
+}
+
+
+
+
+
+/*----------LARGE QUERY----------*/
+
+
+
+ 
