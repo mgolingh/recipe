@@ -782,30 +782,169 @@ footer{
     #container{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        
+        grid-template-rows: 1fr;
+        column-gap: 5px;
     }
     .rice{
-        grid-column: 1/2;
+        display:grid;
+        grid-row: 1/2;
+        
+    }
+
+    .rice img{
+        width: 100%;
+    }
+    
+    .rice h3{
+        position:relative;
+        left:10px;
+        bottom:40px;
+    }
+    
+    .rice p{
+        position:relative;
+        left:-5px;
+        top:-40px;
+    }
+    
+    .rice dd{
+        visibility: hidden;
+    }
+    
+    .rice .rating{
+        position:relative;
+        left:0px;
+        bottom:50px;
     }
     
     .salsaS{
+        display:grid;
         grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left:1em;
+    }
+
+    .salsaS img{
+        width: 100%;
+    }
+    
+    .salsaS h3{
+        position:relative;
+        left:10px;
+        bottom:40px;
+    }
+    
+    .salsaS p{
+        position:relative;
+        left:-5px;
+        top:-40px;
+    }
+    
+    .salsaS dd{
+        visibility: hidden;
+    }
+    
+    .salsaS .rating{
+        position:relative;
+        left:0px;
+        bottom:50px;
     }
     
     .guac{
-        grid-column: 3/4;
         
+        grid-column: 3/4;
+        grid-row: 1/2;
+        
+    }
+
+    .guac img{
+        width: 100%;
+    }
+    
+    .guac h3{
+        position:relative;
+        left:10px;
+        bottom:40px;
+    }
+    
+    .guac p{
+        position:relative;
+        left:-5px;
+        top:-40px;
+    }
+    
+    .guac dd{
+        visibility: hidden;
+    }
+    
+    .guac .rating{
+        position:relative;
+        left:0px;
+        bottom:50px;
     }
     
     .torta{
+        display:grid;
         grid-column: 4/5;
-        
+        grid-row: 1/2;
+        margin-left:1em;
     }
 
+    .torta img{
+        width: 100%;
+    }
+    
+    .torta h3{
+        position:relative;
+        left:10px;
+        bottom:40px;
+    }
+    
+    .torta p{
+        position:relative;
+        left:-5px;
+        top:-40px;
+    }
+    
+    .torta dd{
+        visibility: hidden;
+    }
+    
+    .torta .rating{
+        position:relative;
+        left:0px;
+        bottom:50px;
+    }
 
+    nav{
+        min-width: 1200px;
+    }
+    
+    #search{
+        top:140px;
+        left: 450px;
+        z-index: 9;
+    }
 
+    footer{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    
+    #closer{
+        position:relative;
+        right:100px;
+       
+    }
 
-
-
-
+    #closer div{
+        position:relative;
+        left:350px;
+        bottom:250px;
+    }
+    
+    #social{
+       justify-content:space-evenly;
+       width:600px;
+    }
 }
