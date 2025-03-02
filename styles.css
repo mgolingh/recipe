@@ -113,23 +113,7 @@ li{
     font-size: var(--LI);
 }
 
-dl{
-    display:grid;
-    grid-template-columns: max-content;
-}
 
-dt{
-    font-family:var(--font-text);
-    font-weight: 700;
-    grid-column-start: 1;
-}
-
-dd{
-    font-family: var(--font-text);
-    font-size: var(--DD);
-    grid-column-start: 2;
-    margin-left: 1em;
-}
 
 /*----------small header----------*/
 
@@ -184,6 +168,26 @@ div p{
     margin-top: 0;
     margin-bottom: 0.5em;
 }
+
+dl{
+    display:grid;
+    grid-template-columns: max-content;
+}
+
+dt{
+    font-family:var(--font-text);
+    font-weight: 700;
+    grid-column-start: 1;
+}
+
+dd{
+    font-family: var(--font-text);
+    font-size: var(--DD);
+    grid-column-start: 2;
+    margin-left: 1em;
+}
+
+
 
 .ingredientSection{
     margin-left:1em;
@@ -245,7 +249,7 @@ aside h4{
 
 #container{
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
 }
 
 .rice{
@@ -255,20 +259,24 @@ aside h4{
 
 .rice h3{
     position:relative;
-    left:140px;
+    left:120px;
     bottom:160px;
 }
 
 .rice p{
     position:relative;
-    left:120px;
+    left:105px;
     bottom:160px;
+}
+
+.rice dd{
+    visibility: hidden;
 }
 
 .rice .rating{
     position:relative;
     left:120px;
-    bottom:160px;
+    bottom:180px;
 }
 
 .salsaS{
@@ -278,20 +286,24 @@ aside h4{
 
 .salsaS h3{
     position:relative;
-    left:140px;
+    left:120px;
     bottom:160px;
 }
 
 .salsaS p{
     position:relative;
-    left:120px;
+    left:105px;
     bottom:160px;
+}
+
+.salsaS dd{
+    visibility: hidden;
 }
 
 .salsaS .rating{
     position:relative;
     left:120px;
-    bottom:160px;
+    bottom:180px;
 }
 
 .guac{
@@ -301,20 +313,24 @@ aside h4{
 
 .guac h3{
     position:relative;
-    left:140px;
+    left:120px;
     bottom:160px;
 }
 
 .guac p{
     position:relative;
-    left:120px;
+    left:105px;
     bottom:160px;
+}
+
+.guac dd{
+    visibility: hidden;
 }
 
 .guac .rating{
     position:relative;
     left:120px;
-    bottom:160px;
+    bottom:180px;
 }
 
 .torta{
@@ -324,20 +340,24 @@ aside h4{
 
 .torta h3{
     position:relative;
-    left:140px;
+    left:120px;
     bottom:160px;
 }
 
 .torta p{
     position:relative;
-    left:120px;
+    left:105px;
     bottom:160px;
+}
+
+.torta dd{
+    visibility: hidden;
 }
 
 .torta .rating{
     position:relative;
     left:120px;
-    bottom:160px;
+    bottom:180px;
 }
 
 /*----------small nav----------*/
@@ -361,7 +381,7 @@ nav ul {
     max-height: 0;
 }
 nav li img {
-    display: none;
+    visibility: hidden;
 }
 nav li a {
     display: block;
@@ -563,8 +583,6 @@ footer h3{
 
 @media screen and (min-width: 768px){
     
-}
-    
 header{
     background-color: var(--gray);
 }
@@ -599,18 +617,108 @@ header div{
     margin-left:1em;
     line-height: 1.35;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .stats h2{
-    
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
+dl{
+    justify-content: center;
+}
 
+#dirents{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.ingredients{
+    grid-column: 1/2;
+}
+
+.directions{
+    grid-column: 2/3;
+}
+
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+}
+
+.rice{
+    grid-column: 1/2;
+}
+
+.salsaS{
+    grid-column: 1/2;
+}
+
+.guac{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.torta{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+nav{
+    min-width: 768px;
+}
+
+nav label{
+    visibility: hidden;
+}
+
+nav ul li{
+    display:flex;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 10;
+}
+
+#logo{
+    width:75px;
+    top:-20px;
+    left:0px;
+    background-color: var(--orange);
+    transform:translateY(15px) ;
+}
+
+#logo svg{
+    position:relative;
+    left:5px;
+}
+
+#search{
+    top:8px;
+    left: 325px;
+    z-index: 9;
+}
+
+footer{
+    display:flex;
+    flex-direction: row-reverse;
+    
+}
+
+#closer{
+    display:block;
+}
+
+#social{
+    position:relative;
+   
+}
+}
 
 /*----------LARGE QUERY----------*/
 
+@media screen and (min-width: 1200px){
 
 
- 
+}
