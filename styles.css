@@ -719,6 +719,93 @@ footer{
 /*----------LARGE QUERY----------*/
 
 @media screen and (min-width: 1200px){
+    header{
+        display:grid;
+        grid-template-columns: 75px 1fr 1fr ;
+    }
+
+    header img{
+        grid-column: 2/3;
+        bottom:0px;
+       
+        width:100%;
+    }
+    h1{
+        grid-column: 2/4;
+        align-self: center;
+        margin-left: 400px;
+        margin-bottom: 0.5em;
+    }
+
+    header div{
+        position:relative;
+        width:650px;
+        bottom:0px;
+        left:0px;
+        background-color: var(--gray);
+    }
+
+    menu{
+        display:grid;
+        grid-template-columns: 1fr;
+        width:33px;
+        position:relative;
+        top:0px;
+        border:3px solid var(--orange);
+        
+    }
+
+    .stats{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 20px 20px;
+        color:var(--lt-teal);
+        background-color: var(--black);
+        margin:0px
+    }
+
+    .stats h2{
+        align-items: center;
+        color:var(--lt-teal);
+        grid-column: 1/6;
+    }
+
+    
+    .dt{
+        grid-row-start: 2;
+    }
+
+    .dd{
+        grid-row-start: 3;
+    }
+
+    #container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .rice{
+        grid-column: 1/2;
+    }
+    
+    .salsaS{
+        grid-column: 2/3;
+    }
+    
+    .guac{
+        grid-column: 3/4;
+        
+    }
+    
+    .torta{
+        grid-column: 4/5;
+        
+    }
+
+
+
+
+
 
 
 }
